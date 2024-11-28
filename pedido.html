@@ -1,0 +1,78 @@
+<!doctype html>
+<html>
+<head>
+  <title></title>
+  <link rel="stylesheet" href="produto.css">
+  <script src="script.js" defer></script>
+</head>
+</head>
+<body>
+    <header>
+        <div class="nav">
+        <a href="inicio.html">
+        <img class="voltar" src="fotos/voltar.jfif">
+        </a>
+        </div>
+        <div class="item 1"> 
+        <p class="introducao">Seja Bem-Vindo</p>
+        </div>
+        <div class="item 2"> 
+        <img class="perfil" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTLKn5OnBjDzzlOG8n97rlLs_fmW2oOl1NXOg&s">
+        </div>
+        </header>
+
+<section class="paginaProdutos">
+
+    <div class="ppitem">
+        <img src="fotos/brigadeiro.jfif" class="ProdutoPedido" alt="Brigadeiro">
+      
+        <!-- Controle de quantidade -->
+        <div class="controle">
+          <button class="menos" onclick="alterarNumero(-1)">-</button>
+          <p class="numero">0</p>
+          <button class="mais" onclick="alterarNumero(1)">+</button>
+        </div>
+      
+        <!-- Exibição do valor total -->
+        <p class="total">Total: R$ <span class="valor">0.00</span></p>
+      </div>
+      
+    <section>
+        <div class="inputs">
+            <div class="piptemName">
+              <input type="text" class="Nome" placeholder="Digite seu nome">
+            </div>
+            <div class="piptemName">
+              <input type="text" class="Endereco" placeholder="Digite seu endereco">
+            </div>
+            <div class="piptemName">
+              <input type="text" class="Telefone" placeholder="Digite seu telefone">
+            </div>
+            <div class="containimagens">
+              <img class="Casa" src="fotos/balcao.jfif">
+              <img class="Delivery" src="fotos/delivery.jpg">
+            </div>
+            <button class="botaoInputs" onclick="ChamarInputs()">Enviar</button>
+          </div>
+      
+          <!-- Div que será exibida após a validação -->
+          <div class="IconeTela">
+            <!-- Primeira div: X e nome do usuário -->
+            <div class="topo">
+              <span class="close" onclick="FecharIconeTela()">X</span>
+              <p class="NomeUser"></p>
+            </div>
+      
+            <!-- Segunda div: Imagens -->
+            <div class="imagens">
+              <img class="Pix" src="fotos/pix.jfif" alt="Pix">
+              <img class="Cartao" src="fotos/cartao.jfif" alt="Cartão">
+              <img class="Dinheiro" src="fotos/dinheiro.jfif" alt="Dinheiro">
+            </div>
+          </div>
+      </section>
+
+</body>
+
+
+</html>

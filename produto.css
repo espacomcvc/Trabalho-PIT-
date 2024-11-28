@@ -1,0 +1,199 @@
+
+/*header da pagina inicial, refiz para ficar mais facil e mais bonito*/
+header{
+    border: solid black 1px;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #effe7e;
+    font-family: serif;
+    max-width: 1890px;
+    width: 98%;
+    padding: 0 10px 0 10px;
+    }
+    
+    .voltar{
+        border: solid black 1px;
+        border-radius: 5px;
+        height: 35px;
+        width: 35px;
+        padding: 3px;
+        margin: 0 10px 0 0;
+
+    }
+    .perfil{
+    border: solid black 1px;
+    border-radius: 50%;
+    height: 30px;
+    width: 30px;
+    padding: 3px;
+    margin: 0 10px 0 0;
+    }
+/*reutilizar para facilitar*/
+
+
+
+    .paginaProdutos{
+        display: flex;
+        flex-direction: row;
+        border: 1px solid black;
+        background-color: white;
+        height: 350px;
+        justify-content: space-around;
+        align-items: center;
+        }
+
+        .ppitem{
+            border: solid black 1px;
+            height: auto;
+            height: 200px;
+            flex-wrap: nowrap;
+            width: auto;
+            max-width: 200px;
+            padding: 2px;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            }
+            .ppitem img {
+                width: 100%; 
+                height: 120px; 
+                border-radius: 5%;
+                border-radius: 5px; 
+                object-fit: contain;
+            }
+            .inputs{
+                border: solid black 1px;
+                height: auto;
+                flex-wrap: nowrap;
+                width: auto;
+                max-width: 300px;
+                max-height: 300;
+                height: auto;
+                margin: 8px;
+                padding: 2px 2px 7px 2px;
+                gap: 7px;
+                display: flex;
+                flex-direction: column;
+                align-items: flex-start;
+                border-radius: 9px;
+                flex-wrap: nowrap;
+            }
+            .inputs input{
+                border-radius: 12px;
+            }
+            .containimagens{
+                display: flex;
+                flex-direction: row;
+                flex-wrap: nowrap;
+            }
+            .inputs img {
+                border: 1px dashed black;
+                width: 80%; 
+                height: 80px; 
+                margin: 5px 10px 5px 5px;
+                border-radius: 5%;
+                border-radius: 5px;  object-fit: contain;
+            }
+            .Casa:hover{
+                width: 90%; 
+                height: 100px; 
+                transition: width 0.7s, height 0.7s;
+            }
+            .Delivery:hover{
+                width: 90%; 
+                height: 100px; 
+                transition: width 0.7s, height 0.7s;
+            }
+
+            .ProdutoPedido {
+                width: 150px; /* Ajuste o tamanho da imagem */
+                height: auto;
+              }
+              
+              .controle {
+                display: flex;
+                align-items: center;
+                gap: 10px; /* Espaçamento entre os itens */
+                margin-top: 10px;
+              }
+              
+              .controle button {
+                width: 30px;
+                height: 30px;
+                font-size: 18px;
+                text-align: center;
+                cursor: pointer;
+              }
+              
+              .numero {
+                font-size: 18px;
+                font-weight: bold;
+              }
+
+
+
+            
+
+
+
+
+
+
+
+
+
+         
+            .IconeTela {
+                display: none; /* Inicialmente invisível */
+                position: fixed;
+                top: 20%;
+                left:25%;
+                width: 40%;
+                height: 70%;
+                background-color: rgba(0, 0, 255); /* Fundo escuro semitransparente */
+                color: white;
+                padding: 20px;
+                box-sizing: border-box;
+              }
+          
+              /* Primeira div (contendo o X e o nome do usuário) */
+              .topo {
+                display: flex;
+                flex-direction: row;
+                align-items: center;
+                justify-content: space-between;
+                margin-bottom: 20px; /* Espaço entre topo e imagens */
+              }
+              .topo .close {
+                cursor: pointer;
+                font-size: 20px;
+                color: red;
+              }
+          
+              .topo .NomeUser {
+                font-size: 18px;
+                color: white;
+                margin-left: 10px;
+              }
+          
+              /* Segunda div (contendo as imagens) */
+              .imagens {
+                display: flex;
+                flex-direction: row;
+                flex-wrap: wrap; /* Permite quebra de linha se necessário */
+                justify-content: center;
+                gap: 10px; /* Espaçamento entre as imagens */
+              }
+          
+              .imagens img {
+                width: 80px; /* Largura das imagens */
+                height: 80px; /* Altura das imagens */
+              }
+              .imagens img:hover {
+                width: 100px; /* Largura das imagens */
+                height: 100px; /* Altura das imagens */
+              }
